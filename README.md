@@ -42,9 +42,10 @@ module.exports = {
           // success 
           // 接口数据赋值
           this.productslist = [...this.productslist, ...res.data.content];
+          // 返回总共条数
           this.totalElements = res.data.totalElements;
+          // 每次请求当前＋1，初始化下一页的页码
           this.currentpage = res.data.number + 1;
-          this.totalElements = res.data.totalElements;
           // Promise resolve
           resolve();
         }, (res) => {
