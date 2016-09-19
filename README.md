@@ -78,3 +78,20 @@ module.exports = {
 };
 </script>
 ```
+
+### 三、参数说明
+<table>
+	<tr>
+		<th>参数</th>
+		<th>介绍</th>
+		<th>类型</th>
+		<th>备注</th>
+	</tr>
+	<tr>
+    <td>scrollaction</td>
+		<td>翻页的方法</td>
+		<td>function</td>
+		<td>必填,请使用return Promise 对象</td>
+  </tr>
+	
+</table>
