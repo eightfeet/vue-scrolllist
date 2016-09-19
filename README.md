@@ -2,6 +2,7 @@ vue-scrolllist
 ==============
 
 Vue 手机端下拉刷新（翻页）组件，页面下拉 -> 触底 -> 请求Api -> 刷新视图。建议es6语法；
+当翻页到最后一页时滚动停止请求接口
 
 ### 一、安装
 cd to you project
@@ -26,10 +27,11 @@ npm install vue-scrolllist
 ```
 ```js
 <script>
+// 引入组件
 import scrolllist from 'vue-scrolllist';
-
 module.exports = {
   methods: {
+    // 翻页方法
     getProducts () {
       // 请务必Promise
       return new Promise((resolve, reject) => {
@@ -57,8 +59,11 @@ module.exports = {
   data () {
     return {
       productslist: [],
+      // 定义每页显示多少条
       size: 3,
+      // 初始化起始页面，视接口返回第一页的值而定
       currentpage: 0,
+      // 总共返回数据，用于计算是否到达结果页
       totalElements: null
     };
   },
@@ -67,6 +72,7 @@ module.exports = {
     this.getProducts();
   },
   components: {
+    // 初始化组件
     scrolllist
   }
 };
