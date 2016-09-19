@@ -4,14 +4,6 @@ vue-scrolllist
 Vue 手机端下拉刷新（翻页）组件，页面下拉 -> 触底 -> 请求Api -> 刷新视图。建议es6语法；
 当翻页到最后一页时滚动停止请求接口
 
-一个页面用多个滚动插件时要记得给插件命名
-```html
-<scrolllist scrollaction="scrollA" ... >
-</scrolllist>
-<scrolllist scrollaction="scrollB" ... >
-</scrolllist>
-```
-
 ### 一、安装
 cd to you project
 ```ssh
@@ -130,5 +122,13 @@ module.exports = {
 ### PS：
 ==============
 父级dom位置决定组件位置
+
+一个页面用多个滚动插件时要记得给插件命名
+```html
+<scrolllist scrollaction="scrollA" ... >
+</scrolllist>
+<scrolllist scrollaction="scrollB" ... >
+</scrolllist>
+```
 
 ![](./ex.png)
