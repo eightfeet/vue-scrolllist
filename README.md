@@ -111,4 +111,10 @@ module.exports = {
 		<td>string</td>
 		<td>必填,提供当前页面值给组件计算</td>
   	</tr>
+  	<tr>
+    		<td>scrollname</td>
+		<td>滚动列表名称</td>
+		<td>string</td>
+		<td>选填,如果一个页面中有多个滚动条时要通过给组建命名加以区分</td>
+  	</tr>
 </table>
