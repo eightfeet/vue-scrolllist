@@ -88,10 +88,27 @@ module.exports = {
 		<th>备注</th>
 	</tr>
 	<tr>
-    <td>scrollaction</td>
-		<td>翻页的方法</td>
+    		<td>scrollaction</td>
+		<td>请求接口，翻页方法</td>
 		<td>function</td>
-		<td>必填,请使用return Promise 对象</td>
-  </tr>
-	
+		<td>必填,请务必 return Promise 对象</td>
+  	</tr>
+  	<tr>
+    		<td>currentpage</td>
+		<td>当前页面</td>
+		<td>string</td>
+		<td>必填,提供当前页面值给组件计算</td>
+  	</tr>
+  	<tr>
+    		<td>pagesize</td>
+		<td>每页显示条数</td>
+		<td>string</td>
+		<td>必填,提供当前页面值给组件计算</td>
+  	</tr>
+	<tr>
+    		<td>totalsize</td>
+		<td>接口数据条数</td>
+		<td>string</td>
+		<td>必填,提供当前页面值给组件计算</td>
+  	</tr>
 </table>
