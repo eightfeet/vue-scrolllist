@@ -125,9 +125,9 @@ module.exports = {
 
 一个页面用多个滚动插件时要记得给插件命名
 ```html
-<scrolllist scrollaction="scrollA" ... >
+<scrolllist scrollname="scrollA" ... >
 </scrolllist>
-<scrolllist scrollaction="scrollB" ... >
+<scrolllist scrollname="scrollB" ... >
 </scrolllist>
 ```
 
