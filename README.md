@@ -120,5 +120,5 @@ module.exports = {
 </table>
 
 ### PS：
-
+父级dom位置决定组件位置
 ![](./ex.png)
